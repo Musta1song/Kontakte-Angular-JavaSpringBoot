@@ -18,5 +18,7 @@ export class AddContactComponent {
     console.log(this.contact)
 
     this.postService.postContact(this.contact).subscribe();
+     window.location.reload();
+
   }
 }
