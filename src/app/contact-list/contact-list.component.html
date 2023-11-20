@@ -1,0 +1,18 @@
+<!-- On tables -->
+<div>
+<table class="table-secondary">
+    <th>Name</th>
+    &emsp;
+    <th style="   padding-left: 10px;">Telefon</th>
+    <tr class="table-primary" *ngFor="let contact of contacts">
+
+        <td class="text-success">{{ contact.name}}</td>
+
+        <td class="text-info">{{ contact.phoneNumber}}</td>
+        
+
+        <input name="contactSelector" type="radio" value="{{contact.id}}" (change)="radioUpdate($event)">
+    </tr>
+</table>
+<button id="updateContact" class="updateContact" (click)="deleteContact()">Kontakt entfernen</button>
+</div>
