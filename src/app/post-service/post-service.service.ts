@@ -13,9 +13,12 @@ export class PostServiceService {
 
 
   constructor(private http: HttpClient) { }
-  postContact(contact?: Contact): Observable<Object>{
+  postContact(contact: Contact): Observable<Object>{
+    {
     return this.http.post<Object>(`${this.baseUrl}`,
       contact);
+    }
+  
   }
 }
  

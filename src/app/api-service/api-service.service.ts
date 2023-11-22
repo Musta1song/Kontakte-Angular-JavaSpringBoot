@@ -16,6 +16,7 @@ export class ApiServiceService {
 
   getContacts(): Observable<Contact[]>{
     return this.http.get<Contact[]>(`${this.baseUrl}`);
+    
   }
 }
  

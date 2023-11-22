@@ -18,9 +18,27 @@ export class ContactListComponent implements OnInit {
     this.contactService.getContacts().subscribe((data: Contact[]) => {
       console.log(data);
       this.contacts = data;
+      this.sortAll();
     });
-
   }
+
+  
+  sortAll(){
+    this.contacts.sort((a, b) => {const nameA = a.name!.toUpperCase(); // ignore upper and lowercase
+    const nameB = b.name!.toUpperCase(); // ignore upper and lowercase
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+  
+    // names must be equal
+    return 0;
+  });}
+
+
+ 
   radioUpdate(event: any) {
     this.id=event.target.value;
     console.log(this.id)
