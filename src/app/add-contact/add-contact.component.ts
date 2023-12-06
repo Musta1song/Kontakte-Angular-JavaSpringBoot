@@ -14,9 +14,10 @@ export class AddContactComponent {
   constructor(private postService: PostServiceService) { }
 
   submit() {
-    if(this.contact!.name)
+    if(this.contact!.firstname)
     console.log(this.contact)
     this.postService.postContact(this.contact).subscribe();
     window.location.reload();
+    
   }
 }

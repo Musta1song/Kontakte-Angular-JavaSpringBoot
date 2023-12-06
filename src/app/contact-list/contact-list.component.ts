@@ -24,8 +24,8 @@ export class ContactListComponent implements OnInit {
 
   
   sortAll(){
-    this.contacts.sort((a, b) => {const nameA = a.name!.toUpperCase(); // ignore upper and lowercase
-    const nameB = b.name!.toUpperCase(); // ignore upper and lowercase
+    this.contacts.sort((a, b) => {const nameA = a.firstname!.toUpperCase(); // ignore upper and lowercase
+    const nameB = b.firstname!.toUpperCase(); // ignore upper and lowercase
     if (nameA < nameB) {
       return -1;
     }

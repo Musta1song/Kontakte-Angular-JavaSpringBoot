@@ -27,12 +27,12 @@ public class Controller {
 
     @PostMapping(value = "newContact", consumes = "application/json", produces = "application/json")
     public ResponseEntity<Contact> postContact(@RequestBody Contact contact) {
-        Contact _contact = contactRep.save(new Contact(contact.getName(), contact.getPhoneNumber()));
+        Contact _contact = contactRep.save(new Contact(contact.getFirstname(), contact.getLastname(), contact.getPhoneNumber()));
         return new ResponseEntity<>(_contact, HttpStatus.CREATED);
     }
 
     @DeleteMapping("/contacts/{id}")
-    public Map<String, Boolean> deleteContact(@PathVariable(value = "id") Long id)
+    public Map<String, Boolean> deleteEmployee(@PathVariable(value = "id") Long id)
             throws ResourceNotFoundException {
         Contact contact = contactRep.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Contact not found for this id :: " + id));

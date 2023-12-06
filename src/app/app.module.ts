@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AddContactComponent } from './add-contact/add-contact.component';
 import { UpdateContactComponent } from './update-contact/update-contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTable, MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { UpdateContactComponent } from './update-contact/update-contact.componen
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

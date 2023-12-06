@@ -1,26 +1,29 @@
-.table-secondary {
-    color: green($color: #000000);
-}
 
-table {
-    margin-left: 35.5%;
+
+.table-secondary {
+    margin-left: 2.5%;
     margin-top: 3%;
-    font-size: 22px;
+    font-size: 30px;
     border: 1px solid rgb(54, 46, 46);
     border-collapse: collapse;
-    background-color: rgba(158, 241, 4, 0.774);
+    width: 40%;
 
-    width: 25%;
 }
-
+.tables{
+    display: flex;
+}
 th {
     padding-left: 5px;
+    background-color: rgba(158, 241, 4, 0.774);
+
 }
 
 th,
 td {
     border: 1px solid rgb(54, 46, 46);
     border-collapse: collapse;
+    height: 40px;
+
     padding-left: 5px;
 }
 
@@ -47,17 +50,12 @@ td {
 
 
 input {
-
-    padding-left: 100px;
-    width: 35px;
+    width: 50px;
     height: 18px;
-    font-size: 20px;
-    text-align: left;
-    padding-left: 100px;
-
-
 }
-
+.inputth{
+    width: 10px;
+}
 .text-info {
 
     padding-left: 10px;

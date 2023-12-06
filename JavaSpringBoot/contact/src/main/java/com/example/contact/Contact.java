@@ -12,17 +12,20 @@ public class Contact {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name = "name")
-    private String name;
-
+    @Column(name = "firstname")
+    private String firstname;
+    @Column(name = "lastname")
+    private String lastname;
 
     @Column(name = "phoneNumber")
     private String phoneNumber;
 
 
-    public Contact(String name, String phoneNumber) {
+    public Contact(String firstname, String lastname, String phoneNumber) {
         super();
-        this.name = name;
+        this.firstname = firstname;
+        this.lastname = lastname;
+
         this.phoneNumber = phoneNumber;
     }
 
@@ -30,12 +33,18 @@ public class Contact {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstname() {return firstname;}
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     public String getPhoneNumber() {
