@@ -32,7 +32,7 @@ public class Controller {
     }
 
     @DeleteMapping("/contacts/{id}")
-    public Map<String, Boolean> deleteEmployee(@PathVariable(value = "id") Long id)
+    public Map<String, Boolean> deleteContact(@PathVariable(value = "id") Long id)
             throws ResourceNotFoundException {
         Contact contact = contactRep.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Contact not found for this id :: " + id));
