@@ -11,6 +11,7 @@ import { AddContactComponent } from './add-contact/add-contact.component';
 import { UpdateContactComponent } from './update-contact/update-contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTable, MatTableModule } from '@angular/material/table';
+import { MatListModule, MatListItem } from '@angular/material/list'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MatTable, MatTableModule } from '@angular/material/table';
     FormsModule,
     NgbModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

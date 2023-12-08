@@ -1,4 +1,5 @@
-<br><h4>Kontakt hinzufügen:</h4>
+<br>
+<h2>Kontakt hinzufügen:</h2>
 <div class="addcontactform">
     <label for="name">Vorname:</label><br>
     <input type="text" name="firstname" id="firstname" [(ngModel)]="contact.firstname"><br>
@@ -7,7 +8,9 @@
     <input type="text" name="lastname" id="lastname" [(ngModel)]="contact.lastname"><br>
 
     <label for="phoneNumber">Telefonnummer:</label> <br>
-    <input type="text" name="phoneNumber" id="phoneNumber" [(ngModel)]="contact.phoneNumber"><br>
+  
+    <input type="text" value="+49 " name="phoneNumber" id="phoneNumber" [(ngModel)]="contact.phoneNumber"><br>
+
     <br>
-    <button (click)="submit();">Kontakt speichern</button>
+    <button (click)="AddNewContact();">Kontakt speichern</button>
 </div>

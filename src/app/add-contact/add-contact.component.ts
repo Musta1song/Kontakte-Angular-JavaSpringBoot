@@ -13,10 +13,10 @@ export class AddContactComponent {
   contact: Contact = new Contact();
   constructor(private postService: PostServiceService) { }
 
-  submit() {
+  AddNewContact() {
     if(this.contact!.firstname)
     console.log(this.contact)
-    this.postService.postContact(this.contact).subscribe();
+    this.postService.CreateNewContact(this.contact).subscribe();
     window.location.reload();
     
   }
