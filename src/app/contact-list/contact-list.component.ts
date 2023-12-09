@@ -49,7 +49,7 @@ export class ContactListComponent implements OnInit {
 
   deleteContact() {
     this.deleteService.deleteContact(this.id).subscribe();
-    this.reloadContacts();
+    window.location.reload();
   }
    reloadContacts(){
     window.location.reload();
