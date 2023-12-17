@@ -1,35 +1,31 @@
-<!-- On tables -->
 <div>
-    <div class="tables">
-    
-    <table class="table-secondary">
-        <thead>
+
+    <body>
+        <table>
             <tr>
-                <th scope="col">Vorname</th>
-                <th scope="col"> Nachname</th>
-                &emsp;
-                <th scope="col" colspan="">Telefon</th>
-                <th class="inputth"></th>
-
+                <th><mat-icon> contacts 
+                    </mat-icon>
+                    Name</th>
+                <th>Tel.</th>
             </tr>
-        </thead>
-        <tbody>
-        <tr class="table-primary" *ngFor="let contact of contacts">
+            <tr *ngFor="let contact of contacts">
+                <td><mat-icon>account_box</mat-icon>
+                    {{contact.firstname }}
+                    {{ contact.lastname}}
+                </td>
+                <td> {{ contact.phoneNumber}}
+                </td>
+            </tr>
 
-            <td class="">{{ contact.firstname}}</td>
-            <td class="">{{ contact.lastname}}</td>
-            <td class="">{{ contact.phoneNumber}} </td>
-            <input name="contactSelector" type="radio" value="{{contact.id}}" (change)="MakeButtonsVisibleOnRadioEvent($event)">
+
+        </table>
 
 
 
-        </tr>
-    </tbody>
-    </table>
-</div>
-    
-    <div class="buttons">
-        <button id="updateContact" class="updateContact" (click)="deleteContact()">Kontakt entfernen</button>
-    </div>
+        <div class="buttons">
+            <button id="updateContact" class="updateContact" (click)="deleteContact()">Kontakt entfernen</button>
+
+        </div>
+    </body>
 
 </div>

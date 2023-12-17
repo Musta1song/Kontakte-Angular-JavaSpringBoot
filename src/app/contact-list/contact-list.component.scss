@@ -1,36 +1,32 @@
 
-
-.table-secondary {
-    margin-left: 2.5%;
-    margin-top: 3%;
-    font-size: 30px;
-    border: 1px solid rgb(54, 46, 46);
-    border-collapse: collapse;
-    width: 40%;
-
-}
-.tables{
-    display: flex;
-}
-th {
-    padding-left: 5px;
-    background-color: rgba(158, 241, 4, 0.774);
-
-}
-
-th,
 td {
-    border: 1px solid rgb(54, 46, 46);
-    border-collapse: collapse;
-    height: 40px;
-    font-size: 20px;
+    color: green;
+    width: 50%;
 
-    padding-left: 5px;
+
+}
+tr{
+    border-bottom: 1px solid rgb(202, 197, 197);
 }
 
-.buttons {
-    display: flex;
+table {
+    margin-left: 10%;
+    margin-top: 1%;
+    border: 1px solid lightgray;
+    background-color: rgb(255, 249, 242);
+    width: 800px;
+    font-family: 'Hind Guntur', sans-serif;
+
 }
+th{
+    width: 50%;
+}
+body{
+    zoom: 1.2;
+}
+
+
+
 
 .updateContact {
     visibility: hidden;
@@ -40,25 +36,4 @@ td {
     width: 90px;
 }
 
-.sortContacts {
-    margin-top: 1%;
-    margin-left: 6.5%;
-    background-color: #dfebccda;
-    width: 90px;
 
-}
-
-
-
-input {
-    width: 50px;
-    height: 18px;
-}
-.inputth{
-    width: 10px;
-}
-.text-info {
-
-    padding-left: 10px;
-
-}

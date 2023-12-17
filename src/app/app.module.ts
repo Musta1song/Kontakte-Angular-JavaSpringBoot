@@ -10,8 +10,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AddContactComponent } from './add-contact/add-contact.component';
 import { UpdateContactComponent } from './update-contact/update-contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTable, MatTableModule } from '@angular/material/table';
-import { MatListModule, MatListItem } from '@angular/material/list'
+import { MatTableModule } from '@angular/material/table';
+import { MatListModule } from '@angular/material/list';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon'
+
 
 @NgModule({
   declarations: [
@@ -30,6 +33,8 @@ import { MatListModule, MatListItem } from '@angular/material/list'
     BrowserAnimationsModule,
     MatTableModule,
     MatListModule,
+    MatDividerModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

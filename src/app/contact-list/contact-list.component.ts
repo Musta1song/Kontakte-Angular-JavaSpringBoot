@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Contact } from '../contact';
 import { ApiServiceService } from '../api-service/api-service.service';
 import { UpdateContactService } from '../update-contact/update-contact.service';
+import { MatList } from '@angular/material/list';
 
 @Component({
   selector: 'app-contact-list',

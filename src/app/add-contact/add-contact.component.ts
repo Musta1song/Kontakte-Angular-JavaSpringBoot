@@ -14,10 +14,13 @@ export class AddContactComponent {
   constructor(private postService: PostServiceService) { }
 
   AddNewContact() {
-    if(this.contact!.firstname)
+    if(this.contact!.firstname && this.contact!.phoneNumber){
     console.log(this.contact)
     this.postService.CreateNewContact(this.contact).subscribe();
     window.location.reload();
-    
+    }
+    else{
+      document.getElementById("error")!.innerHTML = "Felder müssen ausgefüllt sein!"
+    }
   }
 }
