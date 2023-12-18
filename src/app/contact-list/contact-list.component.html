@@ -3,10 +3,11 @@
     <body>
         <table>
             <tr>
-                <th><mat-icon> contacts 
+                <th><mat-icon> contacts
                     </mat-icon>
                     Name</th>
                 <th>Tel.</th>
+                <th style="width: 50px;"></th>
             </tr>
             <tr *ngFor="let contact of contacts">
                 <td><mat-icon>account_box</mat-icon>
@@ -15,12 +16,13 @@
                 </td>
                 <td> {{ contact.phoneNumber}}
                 </td>
+                <td>
+                    <input type="radio" value="{{contact.id}}" (change)="MakeButtonsVisibleOnRadioEvent($event)">
+                </td>
             </tr>
 
 
         </table>
-
-
 
         <div class="buttons">
             <button id="updateContact" class="updateContact" (click)="deleteContact()">Kontakt entfernen</button>
