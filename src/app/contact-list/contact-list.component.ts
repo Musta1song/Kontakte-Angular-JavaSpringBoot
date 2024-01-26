@@ -37,21 +37,8 @@ export class ContactListComponent implements OnInit {
     return 0;
   });}
 
-
- 
-  MakeButtonsVisibleOnRadioEvent(event: any) {
-    this.id=event.target.value;
-    console.log(this.id)
-
-    document.getElementById("updateContact")!.style.visibility = "visible";
-  }
-
-
   deleteContact() {
     this.deleteService.deleteContact(this.id).subscribe();
-    window.location.reload();
-  }
-   reloadContacts(){
     window.location.reload();
   }
 }
