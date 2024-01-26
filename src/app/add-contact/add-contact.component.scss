@@ -1,35 +1,23 @@
-.addcontactform {
-    margin-left: 37.5%;
-    font-size: 21px;
-    width: 100px;
+
+.maindiv{
+    display: flex;
+    justify-content: center;
 }
 
+
 h2 {
-    margin-left: 37.5%;
-    margin-top: 2%;
     color: rgb(104, 155, 9);
     font-size: 24px;
 }
+.matinput{
+    height: 30px;
+ background-color: rgba(223, 223, 223, 0.438);
+}
 button{
-    height: 70px;
+    height: 50px;
     font-size: 20px;
     &:hover{
         background-color: rgb(7, 216, 216);
     }
     background-color: aqua;
-}
-input {
-    width: 300px;
-    height: 30px;
-    margin-top: 1%;
-}
-label{
-    margin-top: 5%;
-}
-p{
-    font-size: 18px;
-    color: rgb(250, 95, 56);
-    margin-top: 1%;
-    margin-left: 37.5%;
-
 }

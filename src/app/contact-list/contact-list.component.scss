@@ -1,15 +1,16 @@
-
 td {
     color: green;
     width: 50%;
-
-
 }
-tr{
+
+tr {
     border-bottom: 1px solid rgb(202, 197, 197);
 }
 
+
 table {
+    font-size: 19px;
+    max-width: 90%;
     margin-left: 10%;
     margin-top: 1%;
     border: 1px solid lightgray;
@@ -18,23 +19,19 @@ table {
     font-family: 'Hind Guntur', sans-serif;
 
 }
-th{
+
+th {
     width: 50%;
 }
-body{
+
+body {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.deleteIcon {
+    padding-top:3px;
     zoom: 1.2;
+   color: #f33e3ef3;
 }
-
-
-
-
-.updateContact {
-    visibility: hidden;
-    margin-top: 1%;
-    margin-left: 55%;
-    background-color: #a4ff13da;
-    width: 80px;
-    font-size: 16px;
-}
-
-

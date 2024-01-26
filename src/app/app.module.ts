@@ -13,7 +13,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatListModule } from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
-import {MatIconModule} from '@angular/material/icon'
+import {MatIconModule} from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+
 
 
 @NgModule({
@@ -22,13 +25,16 @@ import {MatIconModule} from '@angular/material/icon'
     ContactListComponent,
     HeaderComponent,
     AddContactComponent,
-    UpdateContactComponent
+    UpdateContactComponent,
+    
   ],
   imports: [
+    MatInputModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    MatFormFieldModule,
     NgbModule,
     BrowserAnimationsModule,
     MatTableModule,

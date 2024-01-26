@@ -20,7 +20,7 @@ export class AddContactComponent {
     window.location.reload();
     }
     else{
-      document.getElementById("error")!.innerHTML = "Felder müssen ausgefüllt sein!"
+      alert("Felder müssen ausgefüllt sein!")
     }
   }
 }

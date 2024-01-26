@@ -1,17 +1,30 @@
-<br>
-<h2>Kontakt hinzufügen:</h2>
-<div class="addcontactform">
-    <label for="name">Vorname:</label><br>
-    <input type="text" name="firstname" id="firstname" [(ngModel)]="contact.firstname"><br>
+<div class="maindiv">
+    <div class="block">
+        <h2>Kontakt hinzufügen:</h2>
+        <br>
+            <p>
+                
+                <mat-form-field appearance="fill" >
+                    <mat-label>Vorname *</mat-label>
+                    <input matInput placeholder="Vorname" [(ngModel)]="contact.firstname">
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field color="accent">
+                    <mat-label>Nachname</mat-label>
 
-    <label for="name">Nachname:</label><br>
-    <input type="text" name="lastname" id="lastname" [(ngModel)]="contact.lastname"><br>
+                    <input matInput placeholder="Nachname" type="text" [(ngModel)]="contact.lastname">
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Telefonnummer *</mat-label>
+                    <input matInput placeholder="Telefonnummer" value="+49" [(ngModel)]="contact.phoneNumber">
+                    <mat-icon matSuffix>phone</mat-icon>
+                </mat-form-field>
+            </p>
 
-    <label for="phoneNumber">Telefonnummer:</label> <br>
-  
-    <input type="text" value="+49 " name="phoneNumber" id="phoneNumber" [(ngModel)]="contact.phoneNumber"><br>
-
-    <br>
-    <button (click)="AddNewContact();">Kontakt speichern</button>
+                <br>
+                <button (click)="AddNewContact();">Kontakt speichern</button>
+    </div>
 </div>
-<p id="error"></p>
