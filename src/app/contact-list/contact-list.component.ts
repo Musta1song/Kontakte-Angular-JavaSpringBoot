@@ -37,8 +37,8 @@ export class ContactListComponent implements OnInit {
     return 0;
   });}
 
-  deleteContact() {
-    this.deleteService.deleteContact(this.id).subscribe();
+  deleteContact(ID:number) {
+    this.deleteService.deleteContact(ID).subscribe();
     window.location.reload();
   }
 }
