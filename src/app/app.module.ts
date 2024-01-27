@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContactListComponent } from './contact-list/contact-list.component';
+import { ContactListComponent } from './components/contact-list/contact-list.component';
 import { FormsModule } from '@angular/forms';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AddContactComponent } from './add-contact/add-contact.component';
-import { UpdateContactComponent } from './update-contact/update-contact.component';
+import { AddContactComponent } from './components/add-contact/add-contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatListModule } from '@angular/material/list';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatIconModule} from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -25,8 +24,7 @@ import {MatInputModule} from '@angular/material/input';
     ContactListComponent,
     HeaderComponent,
     AddContactComponent,
-    UpdateContactComponent,
-    
+
   ],
   imports: [
     MatInputModule,
@@ -40,6 +38,8 @@ import {MatInputModule} from '@angular/material/input';
     MatTableModule,
     MatListModule,
     MatDividerModule,
+    MatInputModule,
+    MatFormFieldModule,
     MatIconModule
   ],
   providers: [],

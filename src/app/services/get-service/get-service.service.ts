@@ -2,13 +2,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Contact } from '../contact';
-
+import { Contact } from 'src/app/contact';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ApiServiceService {
+export class GetService {
   private baseUrl = "http://localhost:8080/api/contacts";
 
 

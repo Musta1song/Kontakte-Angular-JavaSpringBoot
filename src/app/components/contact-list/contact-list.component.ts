@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from '../contact';
-import { ApiServiceService } from '../api-service/api-service.service';
-import { UpdateContactService } from '../update-contact/update-contact.service';
+import { Contact } from '../../contact';
+import { DeleteContactService } from '../../services/delete-contact/delete-contact.service';
+import { GetService } from 'src/app/services/get-service/get-service.service';
 
 @Component({
   selector: 'app-contact-list',
@@ -12,10 +12,10 @@ export class ContactListComponent implements OnInit {
 
   contacts!: Contact[];
   id!: number;
-  constructor(private contactService: ApiServiceService, private deleteService: UpdateContactService){}
+  constructor(private getService: GetService, private deleteService: DeleteContactService){}
 
   ngOnInit(): void {
-    this.contactService.getContacts().subscribe((data: Contact[]) => {
+    this.getService.getContacts().subscribe((data: Contact[]) => {
       console.log(data);
       this.contacts = data;
       this.sortContactsByFirstname();
@@ -37,8 +37,8 @@ export class ContactListComponent implements OnInit {
     return 0;
   });}
 
-  deleteContact(ID:number) {
-    this.deleteService.deleteContact(ID).subscribe();
+  deleteContact() {
+    this.deleteService.deleteContact(this.id).subscribe();
     window.location.reload();
   }
 }

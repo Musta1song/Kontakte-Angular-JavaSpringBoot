@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { ApiServiceService } from '../api-service/api-service.service';
-import { Contact } from '../contact';
-import { PostServiceService } from '../post-service/post-service.service';
-
+import { Contact } from '../../contact';
+import { PostServiceService } from 'src/app/services/post-service/post-service.service';
 @Component({
   selector: 'app-add-contact',
   templateUrl: './add-contact.component.html',
