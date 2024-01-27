@@ -1,30 +1,29 @@
-<div class="maindiv">
+<body>
     <div class="block">
         <h2>Kontakt hinzufügen:</h2>
         <br>
-            <p>
-                
-                <mat-form-field appearance="fill" >
-                    <mat-label>Vorname *</mat-label>
-                    <input matInput placeholder="Vorname" [(ngModel)]="contact.firstname">
-                </mat-form-field>
-            </p>
-            <p>
-                <mat-form-field color="accent">
-                    <mat-label>Nachname</mat-label>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Vorname *</mat-label>
+                <input matInput placeholder="Vorname" [(ngModel)]="contact.firstname">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field color="accent">
+                <mat-label>Nachname</mat-label>
 
-                    <input matInput placeholder="Nachname" type="text" [(ngModel)]="contact.lastname">
-                </mat-form-field>
-            </p>
-            <p>
-                <mat-form-field appearance="fill">
-                    <mat-label>Telefonnummer *</mat-label>
-                    <input matInput placeholder="Telefonnummer" value="+49" [(ngModel)]="contact.phoneNumber">
-                    <mat-icon matSuffix>phone</mat-icon>
-                </mat-form-field>
-            </p>
+                <input matInput placeholder="Nachname" type="text" [(ngModel)]="contact.lastname">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Telefonnummer *</mat-label>
+                <input matInput placeholder="Telefonnummer" value="+49" [(ngModel)]="contact.phoneNumber">
+                <mat-icon matSuffix>phone</mat-icon>
+            </mat-form-field>
+        </p>
 
-                <br>
-                <button (click)="AddNewContact();">Kontakt speichern</button>
+        <br>
+        <button (click)="AddNewContact();">Kontakt speichern</button>
     </div>
-</div>
+</body>

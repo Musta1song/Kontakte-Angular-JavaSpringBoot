@@ -8,7 +8,7 @@ import { Contact } from 'src/app/contact';
 @Injectable({
   providedIn: 'root'
 })
-export class PostServiceService {
+export class PostService {
   private baseUrl = "http://localhost:8080/api/newContact";
 
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Contact } from '../../contact';
-import { PostServiceService } from 'src/app/services/post-service/post-service.service';
+import { PostService } from 'src/app/services/post-service/post-service.service';
 @Component({
   selector: 'app-add-contact',
   templateUrl: './add-contact.component.html',
@@ -9,7 +9,7 @@ import { PostServiceService } from 'src/app/services/post-service/post-service.s
 export class AddContactComponent {
 
   contact: Contact = new Contact();
-  constructor(private postService: PostServiceService) { }
+  constructor(private postService: PostService) { }
 
   AddNewContact() {
     if(this.contact!.firstname && this.contact!.phoneNumber){

@@ -22,7 +22,7 @@ export class ContactListComponent implements OnInit {
     });
   }
 
-  
+
   sortContactsByFirstname(){
     this.contacts.sort((a, b) => {const nameA = a.firstname!.toUpperCase(); // ignore upper and lowercase
     const nameB = b.firstname!.toUpperCase(); // ignore upper and lowercase
