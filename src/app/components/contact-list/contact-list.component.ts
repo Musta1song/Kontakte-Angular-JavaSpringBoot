@@ -11,7 +11,6 @@ import { GetService } from 'src/app/services/get-service/get-service.service';
 export class ContactListComponent implements OnInit {
 
   contacts!: Contact[];
-  id!: number;
   constructor(private getService: GetService, private deleteService: DeleteContactService){}
 
   ngOnInit(): void {
@@ -36,9 +35,15 @@ export class ContactListComponent implements OnInit {
     // names must be equal
     return 0;
   });}
-
-  deleteContact() {
-    this.deleteService.deleteContact(this.id).subscribe();
+  reload(){
     window.location.reload();
+    
+    
+    }
+
+  deleteContact(id:number) {
+    this.deleteService.deleteContact(id).subscribe();
+    setTimeout(this.reload,500)
   }
 }
+

@@ -16,7 +16,7 @@
                 <td> {{ contact.phoneNumber}}
                 </td>
                 <td>
-                    <button id="updateContact" class="updateContact" (click)="deleteContact()"><mat-icon
+                    <button id="updateContact" class="updateContact" (click)="deleteContact(contact.id)"><mat-icon
                             class="deleteIcon">delete</mat-icon></button>
                 </td>
             </tr>

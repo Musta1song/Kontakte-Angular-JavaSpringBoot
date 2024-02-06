@@ -15,10 +15,15 @@ export class AddContactComponent {
     if(this.contact!.firstname && this.contact!.phoneNumber){
     console.log(this.contact)
     this.postService.CreateNewContact(this.contact).subscribe();
-    window.location.reload();
+    setTimeout(this.reload,500)
     }
     else{
       alert("Felder müssen ausgefüllt sein!")
     }
+  }
+  reload(){
+    window.location.reload();
+
+
   }
 }

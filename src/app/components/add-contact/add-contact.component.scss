@@ -1,6 +1,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 
@@ -12,7 +13,11 @@ h2 {
 
 button {
     height: 50px;
-    width: 160px;
+    width: 180px;
     font-size: 19px;
-    background-color: aqua;
+    background-color: rgb(152, 180, 180);
+    border-style: solid 1px;
+}
+mat-icon{
+    margin-top: 10px;
 }
