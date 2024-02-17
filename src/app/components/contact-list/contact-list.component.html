@@ -1,25 +1,28 @@
-<body>
-    <div class="flex">
-        <table>
-            <tr>
-                <th><mat-icon> contacts
-                    </mat-icon>
-                    Name</th>
-                <th>Tel.</th>
-                <th style="width: 50px;"></th>
-            </tr>
-            <tr *ngFor="let contact of contacts">
-                <td><mat-icon>account_box</mat-icon>
-                    {{contact.firstname }}
-                    {{ contact.lastname}}
-                </td>
-                <td> {{ contact.phoneNumber}}
-                </td>
-                <td>
-                    <button id="updateContact" class="updateContact" (click)="deleteContact(contact.id)"><mat-icon
-                            class="deleteIcon">delete</mat-icon></button>
-                </td>
-            </tr>
-        </table>
-    </div>
-</body>
+<div class="flex">
+    <table>
+        <thead>
+        <tr>
+            <th class="mat-th"><mat-icon> contacts
+                </mat-icon>
+              </th> <th> Name</th>
+            <th>Tel.</th>
+            <th style="width: 50px;"></th>
+        </tr>
+    </thead>
+        <tr *ngFor="let contact of contacts">
+            <td class="mat-th"><mat-icon>account_box</mat-icon></td>
+            <td>
+                {{contact.firstname }}
+                {{ contact.lastname}}
+            </td>
+            <td> {{ contact.phoneNumber}}
+            </td>
+            <td>
+                <button id="updateContact" class="updateContact" (click)="deleteContact(contact.id)"><mat-icon
+                        class="deleteIcon">delete</mat-icon></button>
+            </td>
+        </tr>
+    </table>
+    <a mat-fab routerLink="addcontact"><mat-icon>add</mat-icon>
+    </a>
+</div>

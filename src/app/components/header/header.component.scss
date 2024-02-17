@@ -1,10 +1,17 @@
-div {
-    background-color: greenyellow;
+
+nav {
+    padding-bottom: 0;
+    background-color: rgb(255, 200, 200, 1);
+    display: flex;
+    justify-content: center;
+    height: 60px;
+
 
 }
-a{
-    zoom: 1.1;
-    margin-top: 5px;
-   
-}
 
+a {
+    color: #52a9ce;
+    font-size: 40px;
+    position: absolute;
+
+}

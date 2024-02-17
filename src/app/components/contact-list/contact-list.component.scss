@@ -1,28 +1,49 @@
 td {
-    color: green;
     width: 50%;
+    color: #52a9ce;
+
 }
 
+th {
+    width: 50%;
+
+}
+thead{
+    background-color: rgba(245, 101, 101, 0.349);;
+
+}
+a{
+    background-color: rgb(255, 200, 200, 1);
+    margin-top: 10px;
+}
 tr {
     border-bottom: 1px solid rgb(202, 197, 197);
+
+}
+
+.mat-th {
+    width: 100px;
+
+}
+
+mat-icon {
+    padding: 0;
+    margin: 0;
 }
 
 
 table {
     font-size: 19px;
     max-width: 90%;
-    margin-left: 10%;
-    margin-top: 40px;
-    border: 1px solid lightgray;
-    background-color: rgb(255, 249, 242);
+    margin-top: 80px;
+    border: 1px solid rgb(255, 200, 200, 1);
+    background-color: rgb(255, 255, 255);
     width: 800px;
     font-family: 'Hind Guntur', sans-serif;
 
 }
 
-th {
-    width: 50%;
-}
+
 
 body {
     max-width: 90%;
@@ -31,7 +52,10 @@ body {
 }
 
 .deleteIcon {
-    padding-top:3px;
-    zoom: 1.2;
-   color: #f33e3ef3;
+    color: #f33e3ef3;
+}
+
+div {
+    display: flex;
+    justify-content: center;
 }
