@@ -23,7 +23,5 @@ export class AddContactComponent {
   }
   reload(){
     window.location.reload();
-
-
   }
 }
